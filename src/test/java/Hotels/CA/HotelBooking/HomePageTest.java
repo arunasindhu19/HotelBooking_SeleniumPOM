@@ -14,6 +14,8 @@ public class HomePageTest extends Base{
 	{
 		driver = initializeDriver();
 		driver.get("https://ca.hotels.com");
+		
+		//Passing the driver argument while creating object for class. This will help us instantiate the driver while running test cases 
 		HomePage page = new HomePage(driver);
 		page.destination().sendKeys("Toronto");
 		

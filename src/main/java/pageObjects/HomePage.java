@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
 
 	public WebDriver driver;
-	
+	//***************************Initialize all objects***************************
 	By destination = By.xpath("//input[@name='q-destination']");
 	
 	
@@ -17,6 +17,7 @@ public class HomePage {
 	}
 
 
+	//****************Create methods for every initialized object and return the WebElement
 	public WebElement destination()
 	{
 		return driver.findElement(destination);
